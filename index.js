@@ -4,7 +4,11 @@
 
         /**
         * @param {Object[]} pointA first point's (x,y) value.
+        * @param {number} pointA.x first point's x value.
+        * @param {number} pointA.y first point's y value.
         * @param {Object[]} pointB second point's (x,y) value.
+        * @param {number} pointB.x second point's x value.
+        * @param {number} pointB.y second point's y value.
         */
         getAngleDegrees(pointA, pointB) {
           const
@@ -28,6 +32,7 @@
         radiansToDegrees(radians) {
           return radians * 180 / Math.PI;
         },
+
 
       },
       phyz: {
