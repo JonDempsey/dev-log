@@ -1,6 +1,35 @@
 (function(window, _) {
     window.myLibraryName = window.devlog || {
-      numz: {},
+      numz: {
+
+        /**
+        * @param {Object[]} pointA first point's (x,y) value.
+        * @param {Object[]} pointB second point's (x,y) value.
+        */
+        getAngleDegrees(pointA, pointB) {
+          const
+            distanceX = pointB.x - pointA.x,
+            distanceY = pointB.y - pointA.y,
+            radians = Math.atan2(distanceY, distanceX),
+            degrees = radians * 180 / Math.PI;
+          return degrees;
+        },
+
+        /**
+        * @param {number} degrees angle measure in degrees form.
+        */
+        degreesToRadians(degrees) {
+          return degrees * Math.PI / 180;
+        },
+
+        /**
+        * @param {number} radians angle measure in radians form.
+        */
+        radiansToDegrees(radians) {
+          return radians * 180 / Math.PI;
+        },
+
+      },
       phyz: {
 
         getDistance(pointA, pointB) {
