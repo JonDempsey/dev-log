@@ -1,5 +1,5 @@
 (function(window, _) {
-    window.myLibraryName = window.devlog || {
+    window.devlog = window.devlog || {
       numz: {
 
         /**
